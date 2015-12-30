@@ -1,0 +1,4 @@
+*.elc
+bundle/
+junk/
+tmp/

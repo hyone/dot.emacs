@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: module ... (...) where ...
+# expand-env: ((yas/indent-line 'fixed))
+# key: mod
+# --
+module ${1:Main} ${2:$(if (> (string-width text) 0) "(\n  " "")}${2:Names}${2:$(if (> (string-width text) 0) "\n) " "")}where
+$0

@@ -1,0 +1,5 @@
+# name: sub ... { ... }
+# key: sub
+# expand-env: ((yas/indent-line 'fixed))
+# --
+sub ${1:name}${1:$(if (> (string-width text) 0) " " "")}{$0}

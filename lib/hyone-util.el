@@ -394,5 +394,15 @@ Does not set point.  Does nothing if mark ring is empty."
   (if (featurep 'skk)
       (skk-latin-mode -1)))
 
+;; From: http://stackoverflow.com/questions/2416655/file-path-to-clipboard-in-emacs
+(defun hyone:yank-buffer-fullpath ()
+  "Copy the current buffer file name to the clipboard."
+  (interactive)
+  (let ((filename (if (equal major-mode 'dired-mode)
+                      default-directory
+                    (buffer-file-name))))
+    (when filename
+      (kill-new filename)
+      (message "Yanked '%s'" filename))))
 
 (provide 'hyone-util)

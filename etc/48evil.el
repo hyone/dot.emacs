@@ -219,6 +219,7 @@
   (define-key evil-normal-state-map ",m" 'evil-window-middle)
   (define-key evil-normal-state-map ",l" 'evil-window-bottom)
 
+  (define-key evil-normal-state-map ",c" 'hyone:yank-buffer-fullpath)
   (define-key evil-normal-state-map ",d" 'kill-buffer-and-window)
   (define-key evil-normal-state-map ",D" 'hyone:kill-other-buffer-and-window)
   (define-key evil-normal-state-map ",f" 'direx:jump-to-directory-other-window)

@@ -112,6 +112,8 @@
        (newline)
        (forward-line -1)))
 
+  (define-key evil-normal-state-map (kbd "C-a") 'align-regexp)
+
   (define-key evil-normal-state-map (kbd "C-i") 'evil-jump-backward)
   (define-key evil-normal-state-map (kbd "C-o") 'evil-jump-forward)
 

@@ -70,8 +70,8 @@
               (when (featurep 'evil)
                 (setq evil-shift-width 2))
 
-              ;; (turn-on-haskell-indentation)
-              (turn-on-haskell-indent)
+              (turn-on-haskell-indentation)
+              ;; (turn-on-haskell-indent)
 
               ;; setup default haskell environment
               ;; (let ((hsenv-dir (expand-file-name  "~/.haskell/hsenv/env/")))

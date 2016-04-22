@@ -92,7 +92,9 @@
                   (kbd "M-<RET>") 'newline-and-indent
                   (kbd "C-c /")   'ghc-help-key)
 
-                (setup-haskell-mode-key-combo haskell-mode-map))
+                (setup-haskell-mode-key-combo haskell-mode-map)
+                ;; key-combo is disabled for some reason, so enable it explicitlly
+                (key-combo-mode 1))
 
               (ghc-init)
 

@@ -8,15 +8,11 @@
   (use-package ghc
     :commands ghc-init)
 
-  ;; Add to the path to commands installed by cabal
+  ;; Add to the path to commands installed by stack
   (when (eq system-type 'darwin)
-    (add-to-list 'exec-path (expand-file-name "~/Library/Haskell/bin"))
-    (add-to-list 'exec-path (expand-file-name "~/Applications/ghc-7.8.3.app/Contents/bin"))
-    (add-to-list 'exec-path (expand-file-name "~/.cabal/bin")))
+    (add-to-list 'exec-path (expand-file-name "~/.local/bin")))
 
-  (setq haskell-program-name "ghci")
-
-  (setq haskell-program-name "cabal repl")
+  (setq haskell-program-name "stack repl")
 
   ;; Using hlint as flymake check command
   (setq ghc-flymake-command t)
